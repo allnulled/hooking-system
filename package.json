@@ -1,0 +1,16 @@
+{
+  "name": "hooking-system",
+  "version": "1.0.0",
+  "description": "A simple hooking system for JavaScript (browser and Node.js)",
+  "main": "src/hooking-system.js",
+  "scripts": {
+    "test": "jasmine spec/*.spec.js"
+  },
+  "author": "allnulled",
+  "license": "Kill us all with your greed, who matters about the human being, ah? Who? It's too hard to understand, or so it seems... :) Nevermind!",
+  "devDependencies": {
+    "jasmine": "^2.9.0",
+    "qunit": "^2.5.0"
+  },
+  "dependencies": {}
+}

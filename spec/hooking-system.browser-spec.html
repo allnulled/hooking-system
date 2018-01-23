@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Hooking System Test (in browser environment)</title>
+	<script src="../src/hooking-system.js"></script>
+	<link rel="stylesheet" type="text/css" href="../node_modules/qunit/qunit/qunit.css" />
+	<script src="../node_modules/qunit/qunit/qunit.js"></script>
+</head>
+<body>
+
+	<h1>Hooking System browser test</h1>
+
+	<div id="qunit"></div>
+
+	<script type="text/javascript">
+		QUnit.test("HookingSystem class is loaded in browser too!", function(assert) {
+			const hookingSystem = new HookingSystem({});
+			assert.ok(typeof HookingSystem === "function");
+			assert.ok(typeof hookingSystem === "object");
+			assert.ok(typeof hookingSystem.Data === "function");
+			assert.ok(typeof hookingSystem.Hook === "function");
+			assert.ok(typeof hookingSystem.data === "object");
+			assert.ok(typeof hookingSystem.hooks === "object");
+		});
+	</script>
+
+
+</body>
+</html>
